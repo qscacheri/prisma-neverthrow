@@ -1,9 +1,11 @@
 {
-    "name": "prisma-generator-neverthrow",
-    "description": "Provide a description about your generator",
-    "version": "1.0.0",
+    "name": "prisma-neverthrow",
+    "description": "A Prisma generator that uses neverthrow to return errors instead of throwing them",
+    "version": "0.1.0",
     "main": "dist/generator.js",
+    "types": "dist/generator.d.ts",
     "license": "MIT",
+    "prepublish": "tsc",
     "bin": {
         "prisma-generator-neverthrow": "dist/bin.js"
     },
@@ -33,12 +35,12 @@
         "ts-morph": "^18.0.0",
         "typescript": "4.6.2"
     },
-    "homepage": "Link to homepage or github readme here",
+    "homepage": "https://github.com/qscacheri/prisma-neverthrow",
     "repository": {
         "type": "git",
-        "url": "Repo link here"
+        "url": "https://github.com/qscacheri/prisma-neverthrow"
     },
-    "author": "Your Name <Your Email>",
+    "author": "Quin Scacheri",
     "keywords": [
         "prisma",
         "prisma2",
